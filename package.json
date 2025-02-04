@@ -1,0 +1,32 @@
+{
+  "name": "react-turborepo-app",
+  "author": "jungtaeinn",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "lint-staged": "turbo lint-staged",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo clean && rm -rf node_modules",
+    "mkcert": "turbo mkcert"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "devDependencies": {
+    "@react-turborepo/eslint-config": "workspace:*",
+    "turbo": "latest",
+    "prettier": "^3.4.2",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
