@@ -6,9 +6,21 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "lint-staged": "turbo lint-staged",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo clean && rm -rf node_modules",
+    "mkcert": "turbo mkcert"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
   },
   "devDependencies": {
+    "@react-turborepo/eslint-config": "workspace:*",
     "turbo": "latest",
     "prettier": "^3.4.2",
     "typescript": "5.7.3"
