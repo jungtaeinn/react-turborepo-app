@@ -1,0 +1,13 @@
+{
+  "name": "@support/make-cert",
+  "author": "jungtaeinn",
+  "description": "A package to create a self-signed SSL certificate",
+  "version": "0.0.1",
+  "private": false,
+  "bin": {
+    "make-cert": "bin/make-cert.sh"
+  },
+  "scripts": {
+    "start": "bin/make-cert.sh"
+  }
+}
