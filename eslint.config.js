@@ -1,4 +1,4 @@
-import { config } from '@react-turborepo-configs/eslint-config';
+import { config } from '@react-turborepo/eslint-config/base';
 
 /** @type {import("eslint").Linter.Config} */
 export default config;
