@@ -1,11 +1,17 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, userAgent as NextUserAgent } from 'next/server';
+import { parseUserAgent } from '@/common/userAgent';
 
 export function middleware(request: NextRequest): NextResponse {
   const response = NextResponse.next();
+  const { ua } = NextUserAgent(request);
 
   /**
    * userAgent 정보를 조회하여 response 헤더에 추가한다.
    */
+  const userAgent = parseUserAgent(ua);
+
+  response.headers.set('x-device-type', userAgent.deviceType);
+  response.headers.set('x-device-os', userAgent.osType);
 
   /**
    * 토큰 검증 체크 및 갱신 API 호출
