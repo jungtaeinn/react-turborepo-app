@@ -12,7 +12,9 @@ export default function RootLayout({ children }: { children: ReactNode }): JSX.E
         <title></title>
       </head>
       <body>
-        <Provider.NuqsAdapter>{children}</Provider.NuqsAdapter>
+        <Provider.NuqsAdapter>
+          <Provider.ReactQuery>{children}</Provider.ReactQuery>
+        </Provider.NuqsAdapter>
       </body>
     </html>
   );
