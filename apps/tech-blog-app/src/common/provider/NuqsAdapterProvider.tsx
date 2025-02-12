@@ -1,4 +1,5 @@
 import { JSX, ReactNode } from 'react';
+import { NuqsAdapter } from 'nuqs/adapters/next/app';
 
 /**
  * nuqs 라이브러리는 URL 쿼리 문자열을 쉽게 관리하고 상태로 사용합니다.
@@ -22,5 +23,5 @@ import { JSX, ReactNode } from 'react';
  * @see https://nuqs.47ng.com/docs/basic-usage
  */
 export function NuqsAdapterProvider({ children }: { children: ReactNode }): JSX.Element {
-  return <NuqsAdapterProvider>{children}</NuqsAdapterProvider>;
+  return <NuqsAdapter>{children}</NuqsAdapter>;
 }
