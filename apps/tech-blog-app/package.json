@@ -10,6 +10,8 @@
     "lint": "next lint --max-warnings 0"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.66.0",
+    "@tanstack/react-query-devtools": "^5.66.0",
     "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21",
     "motion": "^12.4.2",
