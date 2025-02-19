@@ -21,8 +21,9 @@
   },
   "devDependencies": {
     "@react-turborepo/eslint-config": "workspace:*",
-    "turbo": "latest",
+    "@openapitools/openapi-generator-cli": "^2.16.3",
     "prettier": "^3.4.2",
+    "turbo": "latest",
     "typescript": "5.7.3"
   },
   "packageManager": "pnpm@10.0.0",

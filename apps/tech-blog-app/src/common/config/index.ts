@@ -1,3 +1,2 @@
-export * from './env.client';
-export * from './env.server';
+export * from './config';
 export type { Config, ServerConfig, PublicConfig, Env } from './types';
