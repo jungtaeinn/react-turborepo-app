@@ -34,5 +34,11 @@
     "postcss-preset-env": "^10.1.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "browser": {
+    "./src/common/config/envs/dev.ts": false,
+    "./src/common/config/envs/qa.ts": false,
+    "./src/common/config/envs/beta.ts": false,
+    "./src/common/config/envs/prd.ts": false
   }
 }

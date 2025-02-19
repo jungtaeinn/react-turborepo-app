@@ -3,7 +3,12 @@
  */
 interface ServerConfig {
   /** API 정보 */
-  api: object;
+  api: {
+    /**
+     * API 기본 URL
+     */
+    baseUrl: string;
+  };
 }
 
 /**
@@ -17,7 +22,10 @@ interface PublicConfig {
   /** 기본 URL */
   baseUrl: string;
   /** API 설정 */
-  api: object;
+  api: {
+    /** API 기본 URL */
+    baseUrl: string;
+  };
   /** 이미지 설정 */
   image: {
     /** CloudFront 기본 URL */

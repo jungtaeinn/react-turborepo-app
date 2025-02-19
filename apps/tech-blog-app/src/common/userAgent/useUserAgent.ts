@@ -8,7 +8,7 @@ const isServer = typeof window === 'undefined';
  * UserAgent 정보를 파싱해서 가져오는 Hook
  * @returns UserAgent 정보
  */
-export function useUserAgent() {
+function useUserAgent() {
   const userAgentOrigin = isServer ? use(getUserAgentOnServer()) : window.navigator.userAgent;
 
   return useMemo(() => parseUserAgent(userAgentOrigin), [userAgentOrigin]);
@@ -31,3 +31,5 @@ async function getUserAgentOnServer() {
 
   return userAgent;
 }
+
+export { useUserAgent, getUserAgentOnServer };
