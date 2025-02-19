@@ -1,84 +1,75 @@
-# Turborepo starter
+# ReactTurborepo Frontend
 
-This Turborepo starter is maintained by the Turborepo core team.
+프론트엔드 서비스들을 `MonoRepo(w/ TurboRepo)`를 통해 관리합니다.
 
-## Using this example
 
-Run the following command:
+![Turbo](https://img.shields.io/badge/turbo-latest-blue.svg)
+![Pnpm](https://img.shields.io/badge/pnpm-10.0.0-blue.svg)
+![Husky](https://img.shields.io/badge/husky-9.1.7-blue.svg)
+![Lint-staged](https://img.shields.io/badge/lint--staged-15.2.7-blue.svg)
 
-```sh
-npx create-turbo@latest
+## 목차
+
+- [폴더 구조](#폴더-구조)
+- [실행 방법](#실행-방법)
+- [gitignore 설정](#gitignore-설정)
+- [Authors](#authors)
+
+## 폴더 구조
+
+## 실행 방법
+```bash
+// (옵션) node 버전 확인
+$ node -v
+
+// (옵션) node 버전 확인(nvm 사용 시)
+$ nvm ls
+
+// (옵션) brew 통해 nvm 설치
+$ brew install nvm
+
+// (옵션) nvm 통해 설치된 node 버전 변경
+$ nvm use 18 or $ nvm use {installed node version}
+
+// node 버전을 18 이상으로 설치합니다.(nvm 사용 시, nvm 20 권장)
+$ nvm install 18 or $ nvm install 20
+
+// corepack을 활성화합니다.
+$ corepack enable
+
+// pnpm 설치
+$ brew install pnpm
+
+// 라이브러리 설치(해당 프로젝트는 npm 이 아닌 pnpm 패키지 매니저를 사용한다)
+$ pnpm install
+
+// demo 개발 서버 실행
+$ pnpm run dev:demo
+
+// demo 스토리북 서버 실행
+$ pnpm run storybook:demo
 ```
 
-## What's inside?
+## gitignore 설정
 
-This Turborepo includes the following packages/apps:
+.gitignore 파일에 다음과 같이 설정합니다.
 
-### Apps and Packages
+- 공통
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+    - `toptal`에서 제공하는 gitignore.io 자동 생성기를 통해 추가합니다.
+    ```
+    // example {node,turbo,macos,windows,linux,certificates} 적용하는 경우
+    https://www.toptal.com/developers/gitignore?templates=node,turbo,macos,windows,linux,certificates
+    ```
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+- root/.gitignore
+    - apps 하위 모든 서비스들과 해당 프로젝트에서 `공통`으로 제외해야할 ignore 설정을 추가합니다.
+    - 자동 생성기를 통해 node,`turbo`,`macos`,`windows`,`linux`,`certificates`를 적용합니다.
+    - 자동 생성기로 외에 커스터마이징이 필요한 vscode,`.idea`를 위 자동 생성기로 생성한 내용 하위(# End of ... 주석 하단)에 추가합니다.
+- apps/{service}/.gitignore
+    - 각 서비스별로 필요한 ignore 설정을 추가합니다.
+    - amoremall 의 경우, nextjs 를 사용하므로 `nextjs`를 자동 생성기를 통해 추가합니다.
 
-### Utilities
+## Authors
 
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- 정태인 [JungTaeinn](mailto:asgard5493@gmail.com)
