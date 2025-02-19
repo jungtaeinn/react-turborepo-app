@@ -1,4 +1,4 @@
-# ReactTurborepo Frontend
+# React Turborepo Frontend
 
 프론트엔드 서비스들을 `MonoRepo(w/ TurboRepo)`를 통해 관리합니다.
 
