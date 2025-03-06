@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import '@support/preset-style/styles';
 
 const galaxyZFoldViewports = {
   galaxyZFold5: {

@@ -1,0 +1,19 @@
+{
+  "name": "@support/preset-style",
+  "version": "0.0.0",
+  "exports": {
+    "./postcss-config": "./postcss.config.mjs",
+    "./styles": "./css/globals.css",
+    "./lib/utils": "./lib/utils.ts"
+  },
+  "peerDependencies": {
+    "class-variance-authority": "^0.7.1",
+    "postcss": "^8",
+    "tailwindcss": "^4",
+    "@tailwindcss/postcss": "^4"
+  },
+  "devDependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.0.2"
+  }
+}
