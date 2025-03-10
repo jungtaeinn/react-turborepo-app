@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "turbo dev",
     "dev:back-office-app": "turbo dev --filter back-office-app",
+    "dev:commerce-app": "turbo dev --filter commerce-app",
     "build": "turbo build",
     "lint": "turbo lint",
     "lint-staged": "turbo lint-staged",
