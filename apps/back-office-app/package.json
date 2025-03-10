@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
-    "storybook": "storybook dev -p 6006"
+    "dev:storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.66.0",
@@ -22,6 +22,7 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@heroicons/react": "^2.2.0",
     "@react-turborepo/eslint-config": "workspace:*",
     "@react-turborepo/typescript-config": "workspace:*",
     "@storybook/addon-essentials": "^8.6.3",
