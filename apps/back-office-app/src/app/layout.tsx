@@ -2,6 +2,7 @@ import { JSX, ReactNode } from 'react';
 import { Provider } from '@/common/provider';
 import Script from 'next/script';
 import { generatePublicConfigScripts } from '@/common/config';
+import '@support/preset-style/styles';
 
 /**
  * 모든 페이지에서 공통적으로 사용되는 루트 레이아웃
