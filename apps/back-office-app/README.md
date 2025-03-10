@@ -1,6 +1,6 @@
-# Demo Frontend
+# Back Office Frontend
 
-demo 서비스를 구성하는 프론트엔드 프로젝트입니다.
+Back Office 서비스를 구성하는 프론트엔드 프로젝트입니다.
 
 
 ![React](https://img.shields.io/badge/react-19-blue.svg)
@@ -62,10 +62,10 @@ $ nvm ls
 $ brew install nvm
 
 // (옵션) nvm 통해 설치된 node 버전 변경
-$ nvm use 18 or $ nvm use {installed node version}
+$ nvm use 20 or $ nvm use {installed node version}
 
 // node 버전을 18 이상으로 설치합니다.(nvm 사용 시, nvm 20 권장)
-$ nvm install 18 or $ nvm install 20
+$ nvm install 20
 
 // corepack을 활성화합니다.
 $ corepack enable

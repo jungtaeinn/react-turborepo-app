@@ -39,5 +39,15 @@
     "./src/common/config/envs/qa.ts": false,
     "./src/common/config/envs/beta.ts": false,
     "./src/common/config/envs/prd.ts": false
-  }
+  },
+  "contributors": [
+    {
+      "name": "jungtaeinn",
+      "email": "asgard5493@gmail.com"
+    },
+    {
+      "name": "kimyuna",
+      "url": "https://github.com/namakemono-k"
+    }
+  ]
 }

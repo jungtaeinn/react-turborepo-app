@@ -29,10 +29,10 @@ $ nvm ls
 $ brew install nvm
 
 // (옵션) nvm 통해 설치된 node 버전 변경
-$ nvm use 18 or $ nvm use {installed node version}
+$ nvm use 20 or $ nvm use {installed node version}
 
-// node 버전을 18 이상으로 설치합니다.(nvm 사용 시, nvm 20 권장)
-$ nvm install 18 or $ nvm install 20
+// node 버전을 20 이상으로 설치합니다.
+$ nvm install 20
 
 // corepack을 활성화합니다.
 $ corepack enable
@@ -73,3 +73,4 @@ $ pnpm run storybook:demo
 ## Authors
 
 - 정태인 [JungTaeinn](mailto:asgard5493@gmail.com)
+- 김윤아 [KimYuna](mailto:https://github.com/namakemono-k)
