@@ -21,8 +21,9 @@ const avatarVariants = cva(
 
 interface avatarProps extends VariantProps<typeof avatarVariants> {
   className?: string;
-  children?: React.ReactNode;
+  /** avatar image src */
   imgSrc: string;
+  /** avatar image alt */
   imgAlt?: string;
 }
 
