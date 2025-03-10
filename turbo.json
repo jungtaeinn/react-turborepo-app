@@ -10,7 +10,7 @@
       "outputs": ["dist/**",".next/**", "!.next/cache/**"],
       "cache": true
     },
-    "tech-blog-app/build": {
+    "back-office-app/build": {
       "env": ["NEXT_PUBLIC_ENV","BASE_PATH"],
       "cache": false
     },

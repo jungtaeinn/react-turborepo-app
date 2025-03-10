@@ -1,6 +1,5 @@
 {
-  "name": "tech-blog-app",
-  "author": "jungtaeinn",
+  "name": "back-office-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
