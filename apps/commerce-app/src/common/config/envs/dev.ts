@@ -6,7 +6,7 @@ import { Config } from '@/common/config/types';
 export const envConfig: Config = {
   serverConfig: {
     api: {
-      host: 'https://api.dev.example.com',
+      baseUrl: 'https://api.dev.example.com',
     },
   },
   publicConfig: {
@@ -14,7 +14,7 @@ export const envConfig: Config = {
     basePath: '/',
     baseUrl: 'https://dev.example.com',
     api: {
-      host: 'https://api.dev.example.com',
+      baseUrl: 'https://api.dev.example.com',
     },
     image: {
       cloudFrontBaseUrl: 'https://cdn.dev.example.com',
