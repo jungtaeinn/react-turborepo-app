@@ -1,11 +1,3 @@
-/** @type {import('postcss-load-config').Config} */
-const config = {
-  plugins: {
-    tailwindcss: {},
-    'postcss-preset-env': {
-      browsers: '< 99.5% in KR',
-    },
-  },
-};
+import sharedPostcssConfig from '@support/preset-style/postcss-config';
 
-export default config;
+export default sharedPostcssConfig;
