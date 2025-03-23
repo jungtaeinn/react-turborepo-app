@@ -12,6 +12,8 @@
   --disabled-foreground: var(--color-neutral-300);
   --sidebar-background: var(--color-neutral-100);
   --sidebar-foreground: var(--color-neutral-500);
+  --box-invert-background: var(--color-neutral-900);
+  --box-invert-foreground: hsl(0 0% 100%);
 }
 
 .dark {
@@ -21,6 +23,8 @@
   --disabled-foreground: var(--color-neutral-500);
   --sidebar-background: var(--color-gray-800);
   --sidebar-foreground: var(--color-neutral-200);
+  --box-invert-background: hsl(0 0% 100%);
+  --box-invert-foreground: var(--color-neutral-900);
 }
 
 @theme {
@@ -34,6 +38,8 @@
   --color-disabled-foreground: var(--disabled-foreground);
   --color-sidebar-background: var(--sidebar-background);
   --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-box-invert-background: var(--box-invert-background);
+  --color-box-invert-foreground: var(--box-invert-foreground);
 }
 
 @layer base {

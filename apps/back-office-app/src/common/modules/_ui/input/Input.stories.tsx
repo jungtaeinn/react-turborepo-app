@@ -6,7 +6,6 @@ const meta: Meta<typeof Input> = {
   title: 'modules/Input',
   component: Input,
   parameters: {
-    layout: 'centered',
     docs: {
       description: {},
     },
@@ -22,6 +21,7 @@ export const basic: Story = {
   args: {
     type: 'text',
     placeholder: 'Username',
+    className: 'w-60',
   },
 };
 
@@ -29,5 +29,6 @@ export const disabled: Story = {
   args: {
     disabled: true,
     placeholder: 'Username',
+    className: 'w-60',
   },
 };

@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Cog6ToothIcon } from '@heroicons/react/24/solid';
 
 import { Avatar } from './Avatar';
 
@@ -24,9 +23,15 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const avatar: Story = {
+export const avatar_registered: Story = {
   args: {
     imgSrc:
       'https://images-kr.amoremall.com/fileupload/mainContents/2025/02/28/01_Main-banner_750x570_12429_2503_1w.jpg',
+  },
+};
+
+export const avatar: Story = {
+  args: {
+    userName: 'QK',
   },
 };
