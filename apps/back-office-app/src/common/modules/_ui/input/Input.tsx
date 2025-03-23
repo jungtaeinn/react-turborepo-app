@@ -1,26 +1,24 @@
 import React from 'react';
 import { cn } from '@support/preset-style/lib/utils';
 
-interface CheckboxProps {
+interface InputProps {
   className?: string;
-  type: string;
+  type: 'text' | 'tel' | 'number' | 'search' | 'email' | 'password';
   placeholder?: string;
   disabled?: boolean;
 }
 
-export const Input = ({ className, type, placeholder, disabled }: CheckboxProps) => {
+export const Input = ({ className, type, placeholder, disabled }: InputProps) => {
   return (
-    <>
-      <input
-        className={cn(
-          'flex basis-full h-10 py-1 px-2.5 border border-solid border-gray-300 rounded-md text-neutral-800 text-sm placeholder:text-neutral-400 focus:border-blue-500 disabled:bg-neutral-100',
-          className,
-        )}
-        type={type}
-        placeholder={placeholder}
-        disabled={disabled}
-      />
-    </>
+    <input
+      className={cn(
+        'flex basis-full h-10 py-1 px-2.5 border border-solid border-gray-400/50 rounded-md text-foreground text-sm placeholder:text-disabled-foreground/60 focus:border-primary disabled:opacity-50 disabled:cursor-not-allowed',
+        className,
+      )}
+      type={type}
+      placeholder={placeholder}
+      disabled={disabled}
+    />
   );
 };
 

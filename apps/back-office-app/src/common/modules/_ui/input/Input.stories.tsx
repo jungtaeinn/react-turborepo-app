@@ -28,5 +28,6 @@ export const basic: Story = {
 export const disabled: Story = {
   args: {
     disabled: true,
+    placeholder: 'Username',
   },
 };
