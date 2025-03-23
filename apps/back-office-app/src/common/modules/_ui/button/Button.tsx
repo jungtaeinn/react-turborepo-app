@@ -3,14 +3,13 @@ import { cn } from '@support/preset-style/lib/utils';
 import { cva, VariantProps } from 'class-variance-authority';
 
 const ButtonVariants = cva(
-  'inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium cursor-pointer disabled:cursor-default [&>svg]:w-4 [&>svg]:h-4',
+  'inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium disabled:cursor-default [&>svg]:w-4 [&>svg]:h-4',
   {
     variants: {
       variant: {
         solid: 'bg-primary text-primary-foreground disabled:bg-neutral-300',
         destructive: 'bg-destructive text-primary-foreground hover:bg-red-800',
-        ghost:
-          'border border-solid border-primary text-primary disabled:border-neutral-300 disabled:text-neutral-300',
+        ghost: 'border border-solid border-primary text-primary disabled:border-neutral-300 disabled:text-neutral-300',
         outline: 'border border-solid border-gray-400/50 bg-background text-foreground disabled:text-neutral-300',
         text: 'text-foreground',
       },

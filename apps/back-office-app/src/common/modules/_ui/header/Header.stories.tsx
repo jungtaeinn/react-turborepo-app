@@ -8,7 +8,10 @@ const meta: Meta<typeof Header> = {
   parameters: {
     layout: 'fullscreen',
     docs: {
-      description: {},
+      story: {
+        inline: false,
+        iframeHeight: 400,
+      },
     },
   },
   tags: ['autodocs'],

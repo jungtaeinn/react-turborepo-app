@@ -24,7 +24,7 @@ const PopoverTrigger = ({ isOpen, children }: PopoverTriggerProps) => (
 );
 
 const PopoverContentVariants = cva(
-  'hidden absolute min-w-40 p-4 rounded-xl border border-solid border-gray-400/50 bg-background shadow peer-aria-expanded:block',
+  'hidden absolute min-w-40 p-2 rounded-xl border border-solid border-gray-400/50 bg-background shadow peer-aria-expanded:block',
   {
     variants: {
       placement: {
@@ -55,9 +55,7 @@ interface PopoverContentProps extends VariantProps<typeof PopoverContentVariants
  * Popover content
  */
 const PopoverContent = ({ placement = 'bottom', className, children }: PopoverContentProps) => (
-  <div className={cn(PopoverContentVariants({ placement }), className)}>
-    <div className="flex">{children}</div>
-  </div>
+  <div className={cn(PopoverContentVariants({ placement }), className)}>{children}</div>
 );
 
 export { Popover, PopoverTrigger, PopoverContent };

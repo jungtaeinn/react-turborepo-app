@@ -3,13 +3,40 @@ import { Avatar } from '../avatar/Avatar';
 import { FolderIcon, MagnifyingGlassIcon, MoonIcon, SunIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { Input, InputGroup } from '../input/Input';
+import { Popover, PopoverTrigger, PopoverContent } from '../popover/Popover';
 
 const ThemeToggleTrigger = () => (
-  <button type="button" className="w-8 h-8 p-1 rounded-full text-foreground/80 cursor-pointer hover:bg-gray-200/30">
+  <button type="button" className="w-8 h-8 p-1 rounded-full text-foreground/80 hover:bg-gray-200/30">
     <SunIcon className="w-6 h-6 stroke-1 block [html.dark_&]:hidden" />
     <MoonIcon className="w-6 h-6 stroke-1 hidden [html.dark_&]:block" />
   </button>
 );
+
+interface AccountInfoProps {
+  /** user full name */
+  userName: string;
+  /** user email */
+  userEmail: string;
+}
+
+const AccountInfo = ({ userName, userEmail }: AccountInfoProps) => (
+  <div className="px-2 space-y-1">
+    <p className="text-foreground text-sm font-bold">{userName}</p>
+    <p className="text-foreground/60 text-xs">{userEmail}</p>
+  </div>
+);
+
+const QuickMenu = ({ children }: { children: React.ReactNode }) => <ul role="menu">{children}</ul>;
+
+const QuickMenuItem = ({ menuName }: { menuName: string }) => (
+  <li role="none">
+    <Link href="#" className="block py-1 px-2 rounded-sm text-foreground text-xs hover:bg-gray-400/20">
+      {menuName}
+    </Link>
+  </li>
+);
+
+const Divider = () => <div className="h-px my-2 -mx-2 border-b border-solid border-gray-400/30"></div>;
 
 const Header = () => {
   return (
@@ -30,9 +57,25 @@ const Header = () => {
 
       <div className="flex items-center space-x-2 lg:space-x-4">
         <ThemeToggleTrigger />
-        <a href="#">
-          <Avatar userName="JK" />
-        </a>
+
+        <Popover>
+          <PopoverTrigger isOpen={true}>
+            <Avatar userName="WD" />
+          </PopoverTrigger>
+          <PopoverContent placement="bottomRight" className="w-50">
+            <AccountInfo userName="wendy" userEmail="wendy@gmail.com" />
+            <Divider />
+            <QuickMenu>
+              <QuickMenuItem menuName="Profile" />
+              <QuickMenuItem menuName="Account" />
+              <QuickMenuItem menuName="Help Center" />
+            </QuickMenu>
+            <Divider />
+            <QuickMenu>
+              <QuickMenuItem menuName="Logout" />
+            </QuickMenu>
+          </PopoverContent>
+        </Popover>
       </div>
     </header>
   );

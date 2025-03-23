@@ -25,7 +25,7 @@ export const popover_closed = () => {
   return (
     <Popover>
       <PopoverTrigger>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -38,7 +38,7 @@ export const popover_open_bottom = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -51,7 +51,7 @@ export const popover_open_bottom_right = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -64,7 +64,7 @@ export const popover_open_bottom_left = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -77,7 +77,7 @@ export const popover_open_top = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -90,7 +90,7 @@ export const popover_open_top_right = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -103,7 +103,7 @@ export const popover_open_top_left = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -116,7 +116,7 @@ export const popover_open_right = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
@@ -129,7 +129,7 @@ export const popover_open_left = () => {
   return (
     <Popover>
       <PopoverTrigger isOpen={true}>
-        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground cursor-pointer">
+        <span className="inline-flex items-center justify-center h-10 px-4 gap-x-1 rounded-md text-sm font-medium border border-solid border-gray-400/50 bg-background text-foreground">
           popover open
         </span>
       </PopoverTrigger>
