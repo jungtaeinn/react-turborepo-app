@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { withThemeByClassName } from "@storybook/addon-themes";
 import '@support/preset-style/styles';
 
 const galaxyZFoldViewports = {
@@ -34,6 +35,16 @@ const preview: Preview = {
       },
     },
   },
+
+  decorators: [
+    withThemeByClassName({
+      themes: {
+        light: "light",
+        dark: "dark",
+      },
+      defaultTheme: "light",
+    }),
+  ],
 
   tags: ['autodocs'],
 };

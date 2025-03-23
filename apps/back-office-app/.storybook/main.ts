@@ -9,6 +9,7 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-essentials'),
     getAbsolutePath('@storybook/addon-viewport'),
     getAbsolutePath('storybook-addon-pseudo-states'),
+    getAbsolutePath("@storybook/addon-themes"),
   ],
 
   framework: {
