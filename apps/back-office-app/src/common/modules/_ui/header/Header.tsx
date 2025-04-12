@@ -52,7 +52,7 @@ const Header = () => {
 
       <InputGroup className="w-full lg:flex lg:w-80">
         <MagnifyingGlassIcon className="absolute top-1/2 left-2 w-4 h-4 -translate-y-1/2" />
-        <Input type="search" placeholder="search..." size="small" shape="rounded" icons="prefix" />
+        <Input type="search" placeholder="search..." variant="small" shape="rounded" icons="prefix" />
       </InputGroup>
 
       <div className="flex items-center space-x-2 lg:space-x-4">

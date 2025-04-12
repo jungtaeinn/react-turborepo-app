@@ -13,7 +13,7 @@ const Sidebar = ({ className, children }: SidebarProps) => {
   return (
     <div
       className={cn(
-        'flex flex-col w-60 h-dvh border-r border-solid border-gray-400/30 bg-sidebar-background/50',
+        'flex flex-col max-w-60 h-dvh border-r border-solid border-gray-400/30 bg-sidebar-background/50',
         className,
       )}
     >

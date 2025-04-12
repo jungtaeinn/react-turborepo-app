@@ -3,16 +3,14 @@ import { cn } from '@support/preset-style/lib/utils';
 
 import { CheckIcon } from '@heroicons/react/16/solid';
 
-interface CheckboxProps {
+interface CheckboxProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
-  checked?: boolean;
-  disabled?: boolean;
 }
 
-export const Checkbox = ({ className, checked, disabled }: CheckboxProps) => {
+export const Checkbox = ({ className, ...props }: CheckboxProps) => {
   return (
     <>
-      <input type="checkbox" checked={checked} disabled={disabled} className="sr-only peer" />
+      <input type="checkbox" {...props} className="sr-only peer" />
       <span
         className={cn(
           'inline-flex items-center justify-center w-4 h-4 border border-solid border-gray-400/50 rounded-xs align-middle peer-checked:border-0 peer-checked:bg-primary peer-disabled:bg-disabled-background/50 peer-disabled:opacity-50 [&>svg]:hidden peer-checked:[&>svg]:block peer-disabled:[&>svg]:hidden',
